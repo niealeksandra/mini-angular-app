@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http'
 export class WeatherService {
 
 
-  private weatherUrl1:string = 'http://api.openweathermap.org/data/2.5/weather?q=';
+  private weatherUrl1:string = 'https://api.openweathermap.org/data/2.5/weather?q=';
   private weatherUrl2:string = '&appid=d0625c8b7287bdfd85a61727e3c7544d';
 
 

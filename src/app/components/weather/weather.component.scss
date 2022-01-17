@@ -4,7 +4,7 @@
     border-top: 2px solid $grey;
     border-bottom: 2px solid $grey;
 
-    h3{
+    h3 {
          font-weight: 500;
          padding-top: 10px;
     }
@@ -52,3 +52,22 @@
         }
     }
 }
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+
+        .weather-form {
+            flex-direction: column;
+
+            .form-control {
+                justify-content: space-between;
+            }
+
+            input {
+                margin-top: 10px;
+            }
+        }
+    }
+  }
