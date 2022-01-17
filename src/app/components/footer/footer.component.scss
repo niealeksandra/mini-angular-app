@@ -1,0 +1,13 @@
+@import '../../../scss/variables';
+
+footer {
+    background-color: $darkgrey;
+    padding: 10px 10px 5px 10px;
+
+    p {
+        color: white;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+}

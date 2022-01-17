@@ -1,0 +1,31 @@
+<div class="container">
+    <h3>What's the weather?</h3>
+    <form class="weather-form" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+            <label for="city">Choose Town:</label>
+            <select id="city" name="city" [(ngModel)]="city" >
+                <option value="Warsaw">Warsaw</option>
+                <option value="Krakow">Krakow</option>
+                <option value="Gdansk">Gdansk</option>
+                <option value="Zakopane">Zakopane</option>
+                <option value="Poznan">Poznan</option>
+                <option value="Wroclaw">Wroclaw</option>
+                <option value="Szczecin">Szczecin</option>
+                <option value="Lodz">Lodz</option>
+            </select>
+        </div>
+        <input type="submit" value="Check the weather!" class="btn">
+    </form>
+
+
+    <div class="weather-container">
+        
+        <p *ngIf="weather">The weather in <span class="bold">{{ city }}</span> now:</p>
+
+        <div class="weather-item">
+            <p class="weather-item-temp bold" *ngIf="weather">{{ weather.main.temp | celcius }} &#8451;</p>
+            <p *ngIf="weather">{{ weather.weather[0].description }}</p>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,9 @@
+@import '../scss/variables';
+
+.main-container {
+    width: 500px;
+    height: auto;
+    text-align: center;
+    margin: 50px;
+    border: 5px solid $darkgrey;
+}

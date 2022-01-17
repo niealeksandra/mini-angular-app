@@ -1,0 +1,15 @@
+@import '../../../scss/variables';
+
+.joke-container {
+
+    border-top: 2px solid $grey;
+
+    padding: 10px 20px;
+    cursor: pointer;
+
+    p.info {
+        font-weight: 300;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+}

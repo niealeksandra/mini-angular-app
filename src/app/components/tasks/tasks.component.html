@@ -1,0 +1,2 @@
+<app-task-item *ngFor="let task of tasks" [task]="task" (click)="deleteTask(task)"></app-task-item>
+<p class="no-task bold" *ngIf="tasks.length < 1">Congratulations! You did everything you planned!</p>

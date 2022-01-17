@@ -1,0 +1,7 @@
+<div 
+class="joke-container" 
+*ngIf="joke"
+(click)=onChange()>
+    <p>{{ joke.joke }}</p>
+    <p class="info">Click to reload joke!</p>
+</div>
